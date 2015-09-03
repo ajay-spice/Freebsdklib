@@ -7,4 +7,4 @@
     <item android:drawable="@drawable/bigrecharge" android:duration="50" />
     <item android:drawable="@drawable/facebook_like" android:duration="50" />
  </animation-list>
-<!-- From: file:/F:/MyApplication/LatestApp/FreeBApp/freebsdklib/src/main/res/drawable/image_animation.xml --><!-- From: file:/F:/MyApplication/LatestApp/FreeBApp/freebsdklib/build/intermediates/bundles/debug/res/drawable/image_animation.xml -->
+<!-- From: file:/F:/Git_FreeBSDK/FreebSdklib/Freebsdklib/freebsdklib/src/main/res/drawable/image_animation.xml --><!-- From: file:/F:/Git_FreeBSDK/FreebSdklib/Freebsdklib/freebsdklib/build/intermediates/bundles/debug/res/drawable/image_animation.xml -->

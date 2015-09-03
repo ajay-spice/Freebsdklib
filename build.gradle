@@ -48,7 +48,7 @@ bintray {
         name = 'freeb-sdk'
         userOrg = 'ajay-spice'
         licenses = ['Apache-2.0']
-        vcsUrl = 'https://github.com/ajay-spice/freebsdk.git'
+        vcsUrl = 'https://github.com/ajay-spice/Freebsdklib.git'
         labels = ['gear', 'gore', 'gorilla']
         publicDownloadNumbers = true
         attributes= ['a': ['ay1', 'ay2'], 'b': ['bee'], c: 'cee'] //Optional package-level attributes

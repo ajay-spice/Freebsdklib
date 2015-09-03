@@ -4,4 +4,4 @@
        android:fromXDelta="0%" android:toXDelta="-100%"
        android:fromYDelta="0%" android:toYDelta="0%"
         android:duration="@android:integer/config_longAnimTime" />
-    </set><!-- From: file:/F:/MyApplication/LatestApp/FreeBApp/freebsdklib/src/main/res/anim/righttoleftanim.xml -->
+    </set><!-- From: file:/F:/Git_FreeBSDK/FreebSdklib/Freebsdklib/freebsdklib/src/main/res/anim/righttoleftanim.xml -->

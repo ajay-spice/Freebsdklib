@@ -5,4 +5,4 @@
         android:fromXDelta="0%" android:toXDelta="0%"
         android:fromYDelta="-100%" android:toYDelta="0%"
         android:duration="400" />
-</set><!-- From: file:/F:/MyApplication/LatestApp/FreeBApp/freebsdklib/src/main/res/anim/down_from_up.xml --><!-- From: file:/F:/MyApplication/LatestApp/FreeBApp/freebsdklib/build/intermediates/bundles/debug/res/anim/down_from_up.xml -->
+</set><!-- From: file:/F:/Git_FreeBSDK/FreebSdklib/Freebsdklib/freebsdklib/src/main/res/anim/down_from_up.xml --><!-- From: file:/F:/Git_FreeBSDK/FreebSdklib/Freebsdklib/freebsdklib/build/intermediates/bundles/debug/res/anim/down_from_up.xml -->

@@ -38,4 +38,4 @@
         android:textColor="#FFFFFF"
         android:visibility="gone" />
 
-</LinearLayout><!-- From: file:/F:/MyApplication/LatestApp/FreeBApp/freebsdklib/src/main/res/layout/freeb_progress_hud.xml --><!-- From: file:/F:/MyApplication/LatestApp/FreeBApp/freebsdklib/build/intermediates/bundles/debug/res/layout/freeb_progress_hud.xml -->
+</LinearLayout><!-- From: file:/F:/Git_FreeBSDK/FreebSdklib/Freebsdklib/freebsdklib/src/main/res/layout/freeb_progress_hud.xml --><!-- From: file:/F:/Git_FreeBSDK/FreebSdklib/Freebsdklib/freebsdklib/build/intermediates/bundles/debug/res/layout/freeb_progress_hud.xml -->

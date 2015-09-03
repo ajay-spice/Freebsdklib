@@ -6,4 +6,4 @@
       android:toAlpha="1.0"
       android:duration="3000"
       />
-</set><!-- From: file:/F:/MyApplication/LatestApp/FreeBApp/freebsdklib/src/main/res/anim/fade_in.xml --><!-- From: file:/F:/MyApplication/LatestApp/FreeBApp/freebsdklib/build/intermediates/bundles/debug/res/anim/fade_in.xml -->
+</set><!-- From: file:/F:/Git_FreeBSDK/FreebSdklib/Freebsdklib/freebsdklib/src/main/res/anim/fade_in.xml --><!-- From: file:/F:/Git_FreeBSDK/FreebSdklib/Freebsdklib/freebsdklib/build/intermediates/bundles/debug/res/anim/fade_in.xml -->

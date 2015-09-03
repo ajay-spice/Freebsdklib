@@ -53,4 +53,4 @@
         android:layout_centerInParent="true" >
     </FrameLayout>
 
-</RelativeLayout><!-- From: file:/F:/MyApplication/LatestApp/FreeBApp/freebsdklib/src/main/res/layout/freeb_activity_offers.xml --><!-- From: file:/F:/MyApplication/LatestApp/FreeBApp/freebsdklib/build/intermediates/bundles/debug/res/layout/freeb_activity_offers.xml -->
+</RelativeLayout><!-- From: file:/F:/Git_FreeBSDK/FreebSdklib/Freebsdklib/freebsdklib/src/main/res/layout/freeb_activity_offers.xml --><!-- From: file:/F:/Git_FreeBSDK/FreebSdklib/Freebsdklib/freebsdklib/build/intermediates/bundles/debug/res/layout/freeb_activity_offers.xml -->

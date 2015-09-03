@@ -11,8 +11,8 @@ ext {
     libraryDescription = '\t' +
             'FreeB library is basically used in those android apps where user want to unlock locked features of the app or if publisher wants to earn some money by offering good offers to their customers in his/her app.'
 
-    siteUrl = 'https://github.com/ajay-spice/freebsdk'
-    gitUrl = 'https://github.com/ajay-spice/freebsdk.git'
+    siteUrl = 'https://github.com/ajay-spice/Freebsdklib'
+    gitUrl = 'https://github.com/ajay-spice/Freebsdklib.git'
 
     libraryVersion = '1.0.0'
 

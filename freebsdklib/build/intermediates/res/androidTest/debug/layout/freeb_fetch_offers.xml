@@ -29,4 +29,4 @@
         android:textColor="#333333"
         android:text="You have already consumed all offers."/>
 
-</LinearLayout><!-- From: file:/F:/MyApplication/LatestApp/FreeBApp/freebsdklib/src/main/res/layout/freeb_fetch_offers.xml --><!-- From: file:/F:/MyApplication/LatestApp/FreeBApp/freebsdklib/build/intermediates/bundles/debug/res/layout/freeb_fetch_offers.xml -->
+</LinearLayout><!-- From: file:/F:/Git_FreeBSDK/FreebSdklib/Freebsdklib/freebsdklib/src/main/res/layout/freeb_fetch_offers.xml --><!-- From: file:/F:/Git_FreeBSDK/FreebSdklib/Freebsdklib/freebsdklib/build/intermediates/bundles/debug/res/layout/freeb_fetch_offers.xml -->

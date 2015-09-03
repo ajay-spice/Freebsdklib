@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FreeBApp.iml" filepath="$PROJECT_DIR$/FreeBApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Freebsdklib.iml" filepath="$PROJECT_DIR$/Freebsdklib.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/freeblib/freeblib.iml" filepath="$PROJECT_DIR$/freeblib/freeblib.iml" />
       <module fileurl="file://$PROJECT_DIR$/freebsdklib/freebsdklib.iml" filepath="$PROJECT_DIR$/freebsdklib/freebsdklib.iml" />

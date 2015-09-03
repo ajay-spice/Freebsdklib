@@ -15,4 +15,4 @@
         android:repeatMode="reverse"
         android:interpolator="@android:anim/linear_interpolator"
         android:duration="70" />
-</set><!-- From: file:/F:/MyApplication/LatestApp/FreeBApp/freebsdklib/src/main/res/anim/shake.xml --><!-- From: file:/F:/MyApplication/LatestApp/FreeBApp/freebsdklib/build/intermediates/bundles/debug/res/anim/shake.xml -->
+</set><!-- From: file:/F:/Git_FreeBSDK/FreebSdklib/Freebsdklib/freebsdklib/src/main/res/anim/shake.xml --><!-- From: file:/F:/Git_FreeBSDK/FreebSdklib/Freebsdklib/freebsdklib/build/intermediates/bundles/debug/res/anim/shake.xml -->
