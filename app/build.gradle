@@ -98,7 +98,7 @@ properties.load(project.rootProject.file('local.properties').newDataInputStream(
 bintray {
     user = 'ajay-spice'
     key = '31317855920db8f7bc27f97730a8e9f99b6f707e'
-
+    configurations = ['archives']
     pkg {
         repo = 'maven'
         name = 'freeb-sdk'
