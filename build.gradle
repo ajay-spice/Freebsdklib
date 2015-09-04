@@ -1,5 +1,6 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
+
 buildscript {
     repositories {
         jcenter()
@@ -12,55 +13,18 @@ buildscript {
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
-
-
 }
 
-plugins {
-    id "com.jfrog.bintray" version "1.2"
-}
 
 allprojects {
-
     repositories {
         jcenter()
     }
 
-    apply plugin: 'maven'
-    apply plugin: 'maven-publish'
-    //apply plugin: 'java'
 
 }
-publishing {
-    publications {
-        MyPublication(MavenPublication) {
 
-        }
-    }
-}
 
-bintray {
-    user = 'ajay-spice'
-    key = '31317855920db8f7bc27f97730a8e9f99b6f707e'
 
-    pkg {
-        repo = 'maven'
-        name = 'freeb-sdk'
-        userOrg = 'ajay-spice'
-        licenses = ['Apache-2.0']
-        vcsUrl = 'https://github.com/ajay-spice/Freebsdklib.git'
-        labels = ['gear', 'gore', 'gorilla']
-        publicDownloadNumbers = true
-        attributes= ['a': ['ay1', 'ay2'], 'b': ['bee'], c: 'cee'] //Optional package-level attributes
-        version {
-            name = '1.1-Final FreeB'
-            desc = 'FreeB SDK 1.1'
-            vcsTag = '1.1.0'
-            attributes = ['freeb-sdk': 'in.freeb.sdk']
-        }
-    }
-}
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '2.4'
-}
+

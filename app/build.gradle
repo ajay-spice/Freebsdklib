@@ -1,4 +1,9 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: "com.jfrog.bintray"
+
+// This is the library version used when deploying the artifact
+version = "1.0.0"
 
 android {
     compileSdkVersion 22
@@ -31,4 +36,93 @@ dependencies {
     //compile 'com.android.support:support-v4:+'
      //compile(name:'freeblib', ext:'aar')
     compile project(':freebsdklib')
+}
+
+
+def siteUrl = 'https://github.com/ajay-spice/Freebsdklib'
+def gitUrl = 'https://github.com/ajay-spice/Freebsdklib.git'
+group = "in.freeb.sdk"
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'aar'
+                name 'freebsdklib'
+                url siteUrl
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id 'ajay-spice'
+                        name 'Ajay Saini'
+                        email 'ajay.saini@spicedigital.in'
+                    }
+                }
+                scm {
+                    connection 'https://github.com/ajay-spice/Freebsdklib.git'
+                    developerConnection 'https://github.com/ajay-spice/Freebsdklib.git'
+                    url siteUrl
+
+                }
+            }
+        }
+    }
+}
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
+
+task javadoc(type: Javadoc) {
+    source = android.sourceSets.main.java.srcDirs
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+artifacts {
+    archives javadocJar
+    archives sourcesJar
+}
+
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+bintray {
+    user = 'ajay-spice'
+    key = '31317855920db8f7bc27f97730a8e9f99b6f707e'
+
+    pkg {
+        repo = 'maven'
+        name = 'freeb-sdk'
+        userOrg = 'ajay-spice'
+        licenses = ['Apache-2.0']
+        vcsUrl = 'https://github.com/ajay-spice/Freebsdklib.git'
+        labels = ['gear', 'gore', 'gorilla']
+        publish = true
+        publicDownloadNumbers = true
+        attributes= ['a': ['ay1', 'ay2'], 'b': ['bee'], c: 'cee'] //Optional package-level attributes
+        version {
+            name = '1.0-Final FreeB'
+            desc = 'FreeB SDK 1.0'
+            vcsTag = '1.0.0'
+            attributes = ['freeb-sdk': 'in.freeb.sdk']
+            gpg {
+                sign = true //Determines whether to GPG sign the files. The default is false
+                passphrase = properties.getProperty("bintray.gpg.password")
+                //Optional. The passphrase for GPG signing'
+            }
+        }
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.4'
 }
