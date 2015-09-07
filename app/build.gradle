@@ -27,6 +27,9 @@ android {
         exclude 'META-INF/LICENSE.txt'
     }
 
+    lintOptions {
+        abortOnError false
+    }
 
 }
 
@@ -37,6 +40,7 @@ dependencies {
      //compile(name:'freeblib', ext:'aar')
     compile project(':freebsdklib')
 }
+
 
 
 def siteUrl = 'https://github.com/ajay-spice/Freebsdklib'
@@ -95,10 +99,23 @@ artifacts {
 Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
+subprojects {
+    configurations {
+        published
+    }
+    dependencies {
+        testCompile 'junit:junit:4.7'
+    }
+}
+
+
 bintray {
     user = 'ajay-spice'
     key = '31317855920db8f7bc27f97730a8e9f99b6f707e'
-    configurations = ['archives']
+    filesSpec {
+        from 'build/libs'
+        into '/'
+    }
     pkg {
         repo = 'maven'
         name = 'freeb-sdk'
@@ -112,6 +129,7 @@ bintray {
         version {
             name = '1.0-Final FreeB'
             desc = 'FreeB SDK 1.0'
+            released  = new Date()
             vcsTag = '1.0.0'
             attributes = ['freeb-sdk': 'in.freeb.sdk']
             gpg {
