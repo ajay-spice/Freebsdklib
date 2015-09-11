@@ -3,7 +3,7 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: "com.jfrog.bintray"
 
 // This is the library version used when deploying the artifact
-version = "1.0.0"
+version = "1.0"
 
 android {
     compileSdkVersion 22
@@ -37,7 +37,7 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:22.2.0'
     //compile 'com.android.support:support-v4:+'
-     //compile(name:'freeblib', ext:'aar')
+    //compile(name:'freeblib', ext:'aar')
     compile project(':freebsdklib')
 }
 
@@ -99,23 +99,12 @@ artifacts {
 Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
-subprojects {
-    configurations {
-        published
-    }
-    dependencies {
-        testCompile 'junit:junit:4.7'
-    }
-}
 
 
 bintray {
     user = 'ajay-spice'
     key = '31317855920db8f7bc27f97730a8e9f99b6f707e'
-    filesSpec {
-        from 'build/libs'
-        into '/'
-    }
+    configurations = ['archives']
     pkg {
         repo = 'maven'
         name = 'freeb-sdk'
@@ -127,10 +116,10 @@ bintray {
         publicDownloadNumbers = true
         attributes= ['a': ['ay1', 'ay2'], 'b': ['bee'], c: 'cee'] //Optional package-level attributes
         version {
-            name = '1.0-Final FreeB'
-            desc = 'FreeB SDK 1.0'
+            name = 'Freeb sdk'
+            desc = 'FreeB SDK 1'
             released  = new Date()
-            vcsTag = '1.0.0'
+            vcsTag = '1.0'
             attributes = ['freeb-sdk': 'in.freeb.sdk']
             gpg {
                 sign = true //Determines whether to GPG sign the files. The default is false
