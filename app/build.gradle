@@ -116,7 +116,7 @@ bintray {
         publicDownloadNumbers = true
         attributes= ['a': ['ay1', 'ay2'], 'b': ['bee'], c: 'cee'] //Optional package-level attributes
         version {
-            name = 'Freeb sdk'
+            name = 'freebsdk'
             desc = 'FreeB SDK 1'
             released  = new Date()
             vcsTag = '1.0'
