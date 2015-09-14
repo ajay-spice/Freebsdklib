@@ -2,7 +2,7 @@
 
     package="in.freeb.sdk"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.1" >
 
     <uses-sdk
         android:minSdkVersion="8"

@@ -3,7 +3,7 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: "com.jfrog.bintray"
 
 // This is the library version used when deploying the artifact
-version = "1.0"
+version = "1.1"
 
 android {
     compileSdkVersion 22
@@ -15,7 +15,7 @@ android {
         minSdkVersion 15
         targetSdkVersion 22
         versionCode 1
-        versionName "1.0"
+        versionName "1.1"
     }
     buildTypes {
         release {
@@ -119,7 +119,7 @@ bintray {
             name = 'freebsdk'
             desc = 'FreeB SDK 1'
             released  = new Date()
-            vcsTag = '1.0'
+            vcsTag = '1.1'
             attributes = ['freeb-sdk': 'in.freeb.sdk']
             gpg {
                 sign = true //Determines whether to GPG sign the files. The default is false
